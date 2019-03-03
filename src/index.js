@@ -1,5 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Home from './views/pages/home';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
-render(<Home />, document.getElementById('root'));
+import Home from './views/pages/home';
+import reducers from './store/reducers';
+
+const store = createStore(reducers);
+
+render(<Provider store={ store }><Home /></Provider>, document.getElementById('root'));
