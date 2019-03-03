@@ -2,11 +2,11 @@
 
 import { combineReducers } from 'redux';
 
-import SONGS_LIST from '../fixtures/songs-list';
+import SONGS_LIST from './fixtures/songs-list';
 
 export const songs = () => SONGS_LIST;
 export const songSelected = (selectedItem = null, { type, payload }) => {
-  if (type === 'SONG_SELECTED') return payload.song;
+  if (type === 'HANDLE_SONG_SELECTION') return payload.song;
   return selectedItem;
 };
 

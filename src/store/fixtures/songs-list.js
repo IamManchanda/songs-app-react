@@ -1,25 +1,25 @@
 /* Fixtures - Song List */
 
-import { uuidv4 } from '../../lib/utils';
+import uuid from 'uuid';
 
 const SONGS_LIST = [
   {
-    id: uuidv4(),
+    id: uuid.v4(),
     title: 'No Scrubs',
     duration: '04:05',
   },
   {
-    id: uuidv4(),
+    id: uuid.v4(),
     title: 'Macarena',
     duration: '02:30',
   },
   {
-    id: uuidv4(),
+    id: uuid.v4(),
     title: 'All Star',
     duration: '03:15',
   },
   {
-    id: uuidv4(),
+    id: uuid.v4(),
     title: 'I want it that way.',
     duration: '01:45',
   },
